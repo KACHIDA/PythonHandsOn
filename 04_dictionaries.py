@@ -6,7 +6,7 @@
 
 ab = {
 	'swaroop':'swaroop@swaroop.ch',
-	'Larry':'larry@wall.ch'
+	'Larry':'larry@wall.ch',
 	'Matsumoto':'matz@ruby-lang.org',
 	'spammer':'spammer@hotmail.com'
 }
@@ -20,4 +20,12 @@ del ab['spammer']
 print('\n There are {} contacts in the address book\n'.format(len(ab)));
 
 for name,address in ab.items():
-	print('Contact {} at {} '.)
+	print('Contact {} at {} '.format(name,address))
+
+#Adding a new key-value pair
+
+ab['Guido']='guido@python.org'
+
+if 'Guido' in ab:
+	print("\n Guido's address is  ",ab['Guido'])
+
