@@ -1,0 +1,17 @@
+"""  if you want to make a copy of a list or such kinds of sequences or complex objects ( not simple objects such as integers)  then we have to use the slicing operation to make a copy. if you just assign the variable name to another name, both of them will refer to the same object and this could be trouble if youre not careful"""
+
+print('Simple Assignment')
+shoplist = ['apple','banana','orange','carrot']
+mylist = shoplist
+del shoplist[0]
+
+print('shoplist is',shoplist)
+print('mylist is',mylist)
+
+print('copy by making a full slice')
+mylist = shoplist[:]
+del mylist[0]
+
+print('shoplist is',shoplist)
+print('mylist is',mylist)
+
